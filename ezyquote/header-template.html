@@ -20,7 +20,9 @@
 	.topnav-bg{
 		background-color: var(--topnav-background-colour); 
 	}
-	
+	.create-quote-button-bg{
+		background-color: var(--color-white-rock); 
+	}
 </style>   
 
 </head>
@@ -28,7 +30,7 @@
 <header>
 	<nav class="flex justify-between ph5 pv2 topnav-bg">
 	   <div>
-		    <h1><a class="text-white" href="#">Ezyquotes</a></h1>
+		    <h1 class="ma0"><a class="text-white" href="#">Ezyquotes</a></h1>
 	   </div>
  
 	       <div>
@@ -46,5 +48,19 @@
 	   </div>
 	</nav>  
  </header> 
+	<div class="flex gap3 ph5 justify-between" style="background-color: #74dbef;">
+		<button id="createQuote" class="create-quote-button-bg  ph2 pv1 f6 fw6 bn self-center">Create Quote</button>
+	<div class="flex gap3 ">
+		<ul class="">
+		<li class=""><a href="#">Dashboard</a></li>
+		<li class=""><a href="#">Quotes</a>
+		<li class=""><a href="#">Customer</a></li>
+		<li class=""><a href="#">Staff</a></li>
+		<li class=""><a href="#">>User Configuration</a></li>
+		<li class=""><a href="#">Account Settings</a></li>
+		</ul>
+	</div>
+</div> 
+<h2 class="pt3 pb4 ph5 " >Dashboard</h2>
 </body>
 </html>
