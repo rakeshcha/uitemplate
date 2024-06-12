@@ -10,15 +10,26 @@
         <link rel="stylesheet" href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/new-profile/customTachyons.css" />
 <style>
 	:root {
-		--topnav-background-colour: #264e86;
+		--top-nav-background-colour: #264e86;
+		--dashboard-nav-background-colour: #74dbef;
 	}	
-	}
+	
 	.text-white {
 		color: var(--color-white-rock); 
 	}
 	
-	.topnav-bg{
-		background-color: var(--topnav-background-colour); 
+
+	.top-nav-bg{
+		background-color: var(--top-nav-background-colour); 
+	}
+	.dashboard-nav-bg{
+		background-color: var(--dashboard-nav-background-colour); 
+	}
+	.dashboard-nav-link-color{
+		color: var(--color-very-dark-ebony);		
+	}
+	.dashboard-nav-link-color:hover{
+		color: var(--color-white-rock); 		
 	}
 	.create-quote-button-bg{
 		background-color: var(--color-white-rock); 
@@ -28,7 +39,7 @@
 </head>
 <body>
 <header>
-	<nav class="flex justify-between ph5 pv2 topnav-bg">
+	<nav class="flex justify-between ph5 pv2 top-nav-bg">
 	   <div>
 		    <h1 class="ma0"><a class="text-white" href="#">Ezyquotes</a></h1>
 	   </div>
@@ -48,18 +59,20 @@
 	   </div>
 	</nav>  
  </header> 
-	<div class="flex gap3 ph5 justify-between" style="background-color: #74dbef;">
-		<button id="createQuote" class="create-quote-button-bg  ph2 pv1 f6 fw6 bn self-center">Create Quote</button>
-	<div class="flex gap3 ">
-		<ul class="">
-		<li class=""><a href="#">Dashboard</a></li>
-		<li class=""><a href="#">Quotes</a>
-		<li class=""><a href="#">Customer</a></li>
-		<li class=""><a href="#">Staff</a></li>
-		<li class=""><a href="#">>User Configuration</a></li>
-		<li class=""><a href="#">Account Settings</a></li>
+	<!-- Dashboard Nav Menu-->
+<div class="flex ph5 pv2 justify-between dashboard-nav-bg">
+		<button id="createQuote" class="create-quote-button-bg  ph2 pv1 br2 f6 fw6 bn self-center">Create Quote</button>
+	<div class="pv3">
+		<ul class="flex gap--24 fw8 col--dark-cold-azure ">
+		<li class=""><a href="#" class="dashboard-nav-link-color">Dashboard</a></li>
+		<li class=""><a href="#" class="dashboard-nav-link-color">Quotes</a></li>
+        	<li class=""><a href="#" class="dashboard-nav-link-color">Customer</a></li>
+		<li class=""><a href="#" class="dashboard-nav-link-color">Staff</a></li>
+		<li class=""><a href="#" class="dashboard-nav-link-color">User Configuration</a></li>
+		<li class=""><a href="#" class="dashboard-nav-link-color">Account Settings</a></li>
 		</ul>
 	</div>
+</div>
 </div> 
 <h2 class="pt3 pb4 ph5 " >Dashboard</h2>
 </body>
